@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Title</title>
+    <link href="/css/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<div class="form-style-2">
+    <div class="form-style-2-heading">
+        Already in System!
+    </div>
+    <table>
+        <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="user : ${usersFromServer}">
+            <td>[[${user.firstName}]]</td>
+            <td>[[${user.lastName}]]</td>
+            <td>[[${user.region}]]</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
