@@ -6,5 +6,6 @@ import ru.speedcam.models.CameraHistory;
 import java.util.List;
 
 public interface CameraHistoryRepository extends JpaRepository<CameraHistory, Long> {
-    List<CameraHistory> findAllByCameraId(Long cameraId);
+    List<CameraHistory> findAllByCameraIdOrderByEditDateDesc(Long cameraId);
+    List<CameraHistory> findAllByCameraIdOrderByEditDateAsc(Long cameraId);
 }

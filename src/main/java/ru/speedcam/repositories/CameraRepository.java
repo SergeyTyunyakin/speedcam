@@ -18,6 +18,7 @@ public interface CameraRepository extends JpaRepository<Camera, Long> {
 
     List<Camera> findAllByCreateDateBetweenAndRegionCode(LocalDate dateFrom, LocalDate dateTo, String regionCode);
 
+    Camera findCameraById(Long id);
 
 //    Optional<User> findOneByLogin(String login);
 }

@@ -53,12 +53,12 @@ public class CameraHistory {
         this.printName = printName;
     }
 
-    public String getCamera_model() {
-        return camera_model;
+    public String getCameraModel() {
+        return cameraModel;
     }
 
-    public void setCamera_model(String camera_model) {
-        this.camera_model = camera_model;
+    public void setCameraModel(String cameraModel) {
+        this.cameraModel = cameraModel;
     }
 
     public Long getComplexId() {
@@ -133,7 +133,7 @@ public class CameraHistory {
 
     private String printName;
 
-    private String camera_model;
+    private String cameraModel;
 
     private Long complexId;
 
@@ -163,7 +163,7 @@ public class CameraHistory {
         this.srcCamera = camera.getSrcCamera();
         this.serialNo = camera.getSerialNo();
         this.printName = camera.getPrintName();
-        this.camera_model = camera.getCameraModel();
+        this.cameraModel = camera.getCameraModel();
         this.complexId = camera.getComplexId();
         this.cameraPlace = camera.getCameraPlace();
         this.gpsX = camera.getGpsX();
